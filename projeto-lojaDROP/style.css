@@ -1,0 +1,188 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #272525;
+}
+
+.menu-iniciar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #272525;
+    padding: 10px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+.menu-links a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.banner {
+    margin-top: 0px;
+    text-align: center;
+}
+
+.banner img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product {
+    width: 30%;
+    margin: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+    border-radius: 20px;
+}
+
+.product p {
+    padding: 10px;
+    color: #fff;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .product {
+        width: 45%;
+    }
+}
+
+.tree-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60vh;
+    background: linear-gradient(to bottom, #000000, #272525);
+}
+
+.link {
+    text-align: center;
+    background-color: #ff6666;
+    border: 2px solid #ff0000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.link:hover {
+    transform: scale(1.1);
+}
+
+.link a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.instagram {
+    background-color: #d44d66;
+    padding: 20px;
+
+
+}
+
+.contact {
+    background-color: #40d454;
+}
+
+.all-products {
+    background-color: #4d79ff;
+}
+
+@media screen and (max-width: 768px) {
+    .tree-container {
+        flex-direction: column;
+    }
+
+    .link {
+        margin-bottom: 10px;
+    }
+}
+
+.titulos {
+    text-align: center;
+    color: #fff;
+    background-color: #353232;
+    margin-bottom: 0%;
+
+}
+
+#contato {
+    background-color: #DF2840;
+    /* Cor de fundo da seção */
+    color: #fff;
+    /* Cor do texto */
+    padding: 50px 0;
+    text-align: center;
+}
+
+#contato h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#contato p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    background-color: #fff;
+    /* Cor de fundo do botão */
+    color: #007BFF;
+    /* Cor do texto do botão */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+    /* Cor de fundo do botão ao passar o mouse */
+    color: #fff;
+    /* Cor do texto do botão ao passar o mouse */
+}
