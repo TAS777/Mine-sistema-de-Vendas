@@ -1,0 +1,234 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #272525;
+}
+
+.menu-iniciar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #272525;
+    padding: 10px;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+.menu-links a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.banner {
+    margin-top: 0px;
+    text-align: center;
+}
+
+.banner img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product {
+    width: 30%;
+    margin: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+    border-radius: 20px;
+}
+
+.product p {
+    padding: 10px;
+    color: #fff;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .product {
+        width: 45%;
+    }
+}
+
+/* Estilo para a div com a classe "tree-container" */
+.tree-container {
+    display: flex;
+    flex-direction: column;
+    /* Alinha os itens verticalmente */
+    align-items: center;
+    /* Centraliza os itens no eixo transversal (vertical) */
+}
+
+/* Estilo para os botões dentro dessa div */
+.link-arvore {
+    width: 150px;
+    /* Largura desejada para os botões */
+    height: 50px;
+    /* Altura desejada para os botões */
+    line-height: 50px;
+    /* Centraliza o texto verticalmente */
+    text-align: center;
+    /* Centraliza o texto horizontalmente */
+    margin: 10px 0;
+    /* Espaçamento entre os botões */
+    background-color: #3498db;
+    /* Cor de fundo dos botões */
+    color: #fff;
+    /* Cor do texto nos botões */
+    text-decoration: none;
+    /* Remove a decoração padrão dos links */
+    border: none;
+    /* Remove as bordas dos botões */
+    border-radius: 5px;
+    /* Borda arredondada nos cantos dos botões */
+    cursor: pointer;
+    /* Cursor do mouse ao passar sobre os botões */
+    transition: background-color 0.3s;
+    /* Transição suave de cor de fundo */
+}
+
+.link-arvore a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+/* Estilo para alterar a cor de fundo ao passar o mouse sobre os botões */
+.link-arvore:hover {
+    background-color: #2980b9;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .tree-container {
+        flex-direction: column;
+    }
+
+    .link {
+        margin-bottom: 10px;
+    }
+}
+
+.titulos {
+    text-align: center;
+    color: #fff;
+    background-color: #353232;
+    margin-bottom: 0%;
+
+}
+
+#contato {
+    background-color: #000000;
+    /* Cor de fundo da seção */
+    color: #fff;
+    /* Cor do texto */
+    padding: 50px 0;
+    text-align: center;
+}
+
+#contato h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#contato p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    background-color: #fff;
+    /* Cor de fundo do botão */
+    color: #007BFF;
+    /* Cor do texto do botão */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+    /* Cor de fundo do botão ao passar o mouse */
+    color: #fff;
+    /* Cor do texto do botão ao passar o mouse */
+}
+
+/* Estilo do Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 8px;
+}
+
+.fechar {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.fechar:hover,
+.fechar:focus {
+    color: black;
+    text-decoration: solid;
+    cursor: pointer;
+    padding: 7px;
+}
