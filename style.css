@@ -8,12 +8,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #272525;
+    background-color: #000000;
     padding: 10px;
 }
 
 .logo {
-    font-size: 15px;
+    font-size: 17px;
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
     color: #fff;
@@ -23,6 +23,7 @@ body {
     margin-left: 15px;
     text-decoration: none;
     color: #ffffff;
+    font-size: 16px;
 }
 
 .banner {
@@ -211,9 +212,10 @@ button {
     background-color: #fefefe;
     margin: 10% auto;
     padding: 20px;
-    border: 1px solid #888;
+    border: 2px solid #79c06f;
     width: 80%;
     border-radius: 8px;
+    line-height: 23px;
 }
 
 .fechar {
@@ -222,7 +224,7 @@ button {
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
-    padding: 5px;
+    padding: 15px;
 }
 
 .fechar:hover,
@@ -230,5 +232,17 @@ button {
     color: black;
     text-decoration: solid;
     cursor: pointer;
-    padding: 7px;
+    padding: 17px;
+}
+
+#icon2 {
+    color: rgb(238, 181, 37);
+    font-size: 30px;
+    margin: 0%;
+    padding: 0%;
+}
+
+footer p {
+    color: #aaa;
+    text-align: center;
 }

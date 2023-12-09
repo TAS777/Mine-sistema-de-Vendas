@@ -6,14 +6,14 @@ function mostrarDetalhes(produto) {
 
     switch (produto) {
         case "produto1":
-            modalTitulo.innerText = "Produto 1";
-            modalDescricao.innerHTML = "Detalhes do Produto 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
-            modalBotoes.innerHTML = "<button onclick='saibaMais(\"https://www.seusite.com/produto1\")'>Saiba Mais</button> <button onclick='compreAgora(\"https://www.seusite.com/compra1\")'>Compre Agora</button>";
+            modalTitulo.innerText = "Camisa Tommy Hilfiger";
+            modalDescricao.innerHTML = "Camisa Gola Polo, Qualidade inigualável, uma paleta de cores vibrantes para celebrar o fim de ano. Compre Agora na nossa loja shopee ou chama no whatsaapp";
+            modalBotoes.innerHTML = "<button onclick='saibaMais(\"https://shp.ee/rakrfhg\")'>Link Shopee</button> <button onclick='compreAgora(\"https://wa.me/message/FFU5OZUU7HDRL1\")'>Compre Agora</button>";
             break;
         case "produto2":
-            modalTitulo.innerText = "Produto 2";
-            modalDescricao.innerHTML = "Detalhes do Produto 2. COMPRE AGORA MESMO NA SHOPE OU FALE COM A GENTE.";
-            modalBotoes.innerHTML = "<button onclick='saibaMais(\"https://www.seusite.com/produto2\")'>Saiba Mais</button> <button onclick='compreAgora(\"https://www.seusite.com/compra2\")'>Compre Agora</button>";
+            modalTitulo.innerText = "5 Camisas por Apenas R$100";
+            modalDescricao.innerHTML = "5 Camisas por Apenas R$100. POR TEMPO LIMITADO!! È ISSO MESMO ! COMPRE AGORA NA SHOPE OU PEÇA NO WHATSAPP, ENTRAGA GRATIS PARA SÃO LUIS.";
+            modalBotoes.innerHTML = "<button onclick='saibaMais(\https://shp.ee/5e4n9x3\")'>Link Shopee</button> <button onclick='compreAgora(\"https://wa.me/message/FFU5OZUU7HDRL1\")'>Compre Agora</button>";
             break;
         // Adicione mais casos conforme necessário
     }
