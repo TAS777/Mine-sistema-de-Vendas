@@ -49,10 +49,11 @@ body {
 
     .menu-links a {
         display: block;
-        margin-bottom: 12px;
+        margin-bottom: 11px;
         margin-top: 7px;
         background-color: #474646;
         padding: 10px;
+        text-align: center;
     }
 
     .menu-btn {
@@ -67,6 +68,7 @@ body {
         margin-top: 10px;
         border-radius: 9px;
         font-size: 14px;
+
     }
 }
 

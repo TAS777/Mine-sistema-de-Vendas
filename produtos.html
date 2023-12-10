@@ -1,123 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f2f2f2;
-        }
+    <link rel="stylesheet" href="estiloprodutos.css">
 
-        /* Estilos padrão */
-        .menu-iniciar {
-            display: flex;
-            justify-content: space-between;
-            background-color: #000000;
-            padding: 10px;
-        }
-
-        .logo {
-            font-size: 23px;
-            font-weight: bold;
-            font-family: 'Times New Roman', Times, serif;
-            color: #fff;
-        }
-
-        .menu-links {
-            display: flex;
-            /* Outros estilos conforme necessário */
-        }
-
-        .menu-links a {
-            margin-left: 15px;
-            text-decoration: none;
-            color: #ffffff;
-            font-size: 16px;
-        }
-
-        /* Estilos para telas menores, como celulares */
-        @media (max-width: 768px) {
-            .menu-iniciar {
-                flex-direction: column;
-                align-items: center;
-
-            }
-
-            .menu-links {
-                display: none;
-                /* Oculte os links por padrão */
-                width: 100%;
-                text-align: center;
-                /* Centralize os links */
-            }
-
-            .menu-links a {
-                display: block;
-                margin-bottom: 10px;
-            }
-
-            .menu-btn {
-                display: block;
-                background-color: #ffffff;
-                /* Cor branca */
-                color: #000000;
-                /* Cor do texto preto */
-                padding: 12px;
-                border: none;
-                cursor: pointer;
-                margin-top: 10px;
-                border-radius: 9px;
-                font-size: 14px;
-            }
-        }
-
-
-        header {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1em;
-        }
-
-        section {
-            max-width: 800px;
-            margin: 2em auto;
-            padding: 1em;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        h2 {
-            color: #333;
-            text-align: center;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        li {
-            margin-bottom: 1em;
-        }
-
-        .category {
-            cursor: pointer;
-            font-weight: bold;
-        }
-
-        .subcategory {
-            margin-left: 20px;
-            cursor: pointer;
-            color: #555;
-        }
-    </style>
-    <title>Compre Bem Hoje - Produtos</title>
+    <title>Produtos</title>
 </head>
 
 <body>
@@ -134,67 +23,16 @@
 
     <header>
         <h1>Todos os Produtos</h1>
+        <nav id="categorias"></nav>
     </header>
 
-    <section>
-        <h2>Categorias de Produtos</h2>
-        <ul>
-            <li class="category" onclick="toggleSubcategories('roupas')">Roupas
-                <ul id="roupas" class="subcategory" style="display: none;">
-                    <li class="subcategory" onclick="showProducts('masculino')">Masculino</li>
-                    <li class="subcategory" onclick="showProducts('feminino')">Feminino</li>
-                    <li class="subcategory" onclick="showProducts('intimo')">Íntimo</li>
-                </ul>
-            </li>
-            <li class="category" onclick="toggleSubcategories('acessorios')">Acessórios
-                <ul id="acessorios" class="subcategory" style="display: none;">
-                    <li class="subcategory" onclick="showProducts('eletro')">Eletro</li>
-                    <li class="subcategory" onclick="showProducts('cordoes')">Cordões e Pulseiras</li>
-                    <li class="subcategory" onclick="showProducts('alianca')">Alianças</li>
-                </ul>
-            </li>
-        </ul>
-        <div id="product-container" style="margin-top: 20px;">
-            <!-- Os produtos serão exibidos aqui -->
-        </div>
-    </section>
+    <main id="produtos"></main>
 
     <footer>
         <p>&copy; 2023 Carvalho Santos - Rua 38, JD São Cristóvao 2. <br> São Luis - MA.</p>
     </footer>
 
-    <script>
-        function toggleMenu() {
-            var menuLinks = document.querySelector('.menu-links');
-            menuLinks.style.display = (menuLinks.style.display === 'none' || menuLinks.style.display === '') ? 'block' : 'none';
-        }
-
-
-        function toggleSubcategories(categoryId) {
-            const subcategoryList = document.getElementById(categoryId);
-            subcategoryList.style.display = subcategoryList.style.display === 'none' ? 'block' : 'none';
-        }
-
-        function showProducts(subcategoryId) {
-            const productContainer = document.getElementById('product-container');
-            // Limpar os produtos anteriores
-            productContainer.innerHTML = "";
-
-            // Simular produtos para a subcategoria selecionada (isso pode ser dinâmico com dados reais)
-            const products = [
-                { name: 'Produto 1', price: 'R$ 50.00' },
-                { name: 'Produto 2', price: 'R$ 75.00' },
-                { name: 'Produto 3', price: 'R$ 30.00' }
-            ];
-
-            // Adicionar produtos ao contêiner
-            products.forEach(product => {
-                const productItem = document.createElement('div');
-                productItem.innerHTML = `<strong>${product.name}</strong><br>Preço: ${product.price}`;
-                productContainer.appendChild(productItem);
-            });
-        }
-    </script>
+    <script src="produtos.js"></script>
 </body>
 
 </html>
