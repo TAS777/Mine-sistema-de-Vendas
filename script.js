@@ -1,3 +1,8 @@
+function toggleMenu() {
+    var menuLinks = document.querySelector('.menu-links');
+    menuLinks.style.display = (menuLinks.style.display === 'none' || menuLinks.style.display === '') ? 'block' : 'none';
+}
+
 function mostrarDetalhes(produto) {
     const modal = document.getElementById("modal");
     const modalTitulo = document.getElementById("modal-titulo");
