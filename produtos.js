@@ -7,14 +7,19 @@ document.addEventListener('DOMContentLoaded', function () {
     const categorias = ['Roupas', 'Tênis', 'Acessórios'];
     const subcategorias = {
         'Roupas': ['Camisa', 'Bermudas', 'Calças'],
-        'Tênis': [],
+        'Tênis': ['Tênis Esportivo', 'Tênis Casual'],
         'Acessórios': ['Bonés', 'Cordões']
     };
 
     const produtos = [
-        { categoria: 'Camisa', nome: 'Camisa Casual', preco: 39.99, imagem: 'camisa1.jpg' },
+        { categoria: 'Camisa', nome: 'Camisa Hilfiger', preco: 99.99, imagem: 'imagens/camisa2tommy.jpg' },
         { categoria: 'Bermudas', nome: 'Bermuda Jeans', preco: 29.99, imagem: 'bermuda1.jpg' },
         { categoria: 'Calças', nome: 'Calça Chino', preco: 49.99, imagem: 'calca1.jpg' },
+        { categoria: 'Tênis Esportivo', nome: 'Tênis 1', preco: 89.99, imagem: 'tenis1.jpg' },
+        { categoria: 'Tênis Casual', nome: 'Tênis 2', preco: 79.99, imagem: 'tenis2.jpg' },
+        { categoria: 'Bonés', nome: 'boné 1 ', preco: 79.99, imagem: 'tenis2.jpg' },
+        { categoria: 'Cordões', nome: 'Cordão de ouro', preco: 100.99, imagem: 'tenis2.jpg' },
+
         // Adicione mais produtos conforme necessário
     ];
 
