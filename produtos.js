@@ -3,6 +3,8 @@ function toggleMenu() {
     menuLinks.style.display = (menuLinks.style.display === 'none' || menuLinks.style.display === '') ? 'block' : 'none';
 }
 
+
+
 document.addEventListener('DOMContentLoaded', function () {
     const categorias = ['Roupas', 'Tênis', 'Acessórios'];
     const subcategorias = {

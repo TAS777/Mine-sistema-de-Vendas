@@ -11,9 +11,9 @@ function mostrarDetalhes(produto) {
 
     switch (produto) {
         case "produto1":
-            modalTitulo.innerText = "Camisa Tommy Hilfiger";
-            modalDescricao.innerHTML = "Camisa Gola Polo, Qualidade inigualável, uma paleta de cores vibrantes para celebrar o fim de ano. Compre Agora na nossa loja shopee ou chama no whatsaapp";
-            modalBotoes.innerHTML = "<button onclick='saibaMais(\"https://shp.ee/rakrfhg\")'>Link Shopee</button> <button onclick='compreAgora(\"https://wa.me/message/FFU5OZUU7HDRL1\")'>Compre Agora</button>";
+            modalTitulo.innerText = "Tênis Nike just do it. R$99,90 QUALQUER MODELO";
+            modalDescricao.innerHTML = "Tênis Disponivel para entrega, e diversos outros modelos, para celebrar o fim de ano. Disponivel a pronta entrega no nosso Whatsaapp , CLICK NO BOTÃO COMPRAR AGORA";
+            modalBotoes.innerHTML = "<button onclick='saibaMais(\"#\")'>Link Shopee</button> <button onclick='compreAgora(\"https://wa.me/message/FFU5OZUU7HDRL1\")'>Compre Agora</button>";
             break;
         case "produto2":
             modalTitulo.innerText = "5 Camisas por Apenas R$100";

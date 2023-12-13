@@ -204,7 +204,7 @@ button {
 }
 
 #contato {
-    background-color: #000000;
+    background-color: #88dd7d;
     /* Cor de fundo da seção */
     color: #fff;
     /* Cor do texto */
@@ -213,8 +213,10 @@ button {
 }
 
 #contato h2 {
-    font-size: 36px;
+    font-size: 30px;
     margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 #contato p {
@@ -229,7 +231,7 @@ button {
     text-decoration: none;
     background-color: #fff;
     /* Cor de fundo do botão */
-    color: #007BFF;
+    color: #1e1e1f;
     /* Cor do texto do botão */
     border-radius: 5px;
     transition: background-color 0.3s ease;
