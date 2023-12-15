@@ -20,6 +20,11 @@ function mostrarDetalhes(produto) {
             modalDescricao.innerHTML = "5 Camisas por Apenas R$100. POR TEMPO LIMITADO!! È ISSO MESMO ! COMPRE AGORA NA SHOPE OU PEÇA NO WHATSAPP, ENTRAGA GRATIS PARA SÃO LUIS.";
             modalBotoes.innerHTML = "<button onclick='saibaMais(\https://shp.ee/5e4n9x3\")'>Link Shopee</button> <button onclick='compreAgora(\"https://wa.me/p/6882087665215068/559881286938\")'>Compre Agora</button>";
             break;
+        case "produto3":
+            modalTitulo.innerText = "camisa tommy";
+            modalDescricao.innerHTML = "5 Camisas por Apenas R$100. POR TEMPO LIMITADO!! È ISSO MESMO ! COMPRE AGORA NA SHOPE OU PEÇA NO WHATSAPP, ENTRAGA GRATIS PARA SÃO LUIS.";
+            modalBotoes.innerHTML = "<button onclick='saibaMais(\https://shp.ee/5e4n9x3\")'>Link Shopee</button> <button onclick='compreAgora(\"https://wa.me/p/6882087665215068/559881286938\")'>Compre Agora</button>";
+            break;
         // Adicione mais casos conforme necessário
     }
 
