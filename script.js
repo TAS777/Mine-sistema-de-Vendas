@@ -3,24 +3,6 @@ function toggleMenu() {
     menuLinks.style.display = (menuLinks.style.display === 'none' || menuLinks.style.display === '') ? 'block' : 'none';
 }
 
-document.addEventListener('DOMContentLoaded', function () {
-    const galeria = document.getElementById('galeria');
-    const imagens = document.querySelectorAll('.galeria img');
-    let index = 0;
-
-    function nextImage() {
-        index = (index + 1) % imagens.length;
-        updateGaleria();
-    }
-
-    setInterval(nextImage, 2000);
-
-    function updateGaleria() {
-        const translateValue = -index * 100 + '%';
-        galeria.style.transform = `translateX(${translateValue})`;
-    }
-});
-
 
 function mostrarDetalhes(produto) {
     const modal = document.getElementById("modal");
