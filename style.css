@@ -83,6 +83,18 @@ body {
     height: auto;
 }
 
+.galeria {
+    display: flex;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.galeria img {
+    width: 100%;
+    transition: transform 1s ease-in-out;
+}
+
+
 
 
 .product-container {

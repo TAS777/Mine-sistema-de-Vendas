@@ -28,6 +28,23 @@ function mostrarDetalhes(produto) {
         // Adicione mais casos conforme necessário
     }
 
+    document.addEventListener('DOMContentLoaded', function () {
+        const galeria = document.getElementById('galeria');
+        const imagens = document.querySelectorAll('.galeria img');
+        let index = 0;
+
+        setInterval(() => {
+            index = (index + 1) % imagens.length;
+            updateGaleria();
+        }, 2000);
+
+        function updateGaleria() {
+            const translateValue = -index * 100 + '%';
+            galeria.style.transform = `translateX(${translateValue})`;
+        }
+    });
+
+
     modal.style.display = "block";
 }
 
