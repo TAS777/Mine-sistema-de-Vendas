@@ -310,3 +310,16 @@ footer p {
     text-align: center;
     font-size: 14px;
 }
+
+#mensagem {
+    display: none;
+    margin-top: 10px;
+    font-size: 18px;
+    color: green;
+
+}
+
+.perguntasfrequentes {
+    display: block;
+    text-align: center;
+}
